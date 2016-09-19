@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:id="@+id/reLy"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#4653a9">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:id="@+id/ll1"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:scaleType="center"
+                android:id="@+id/btn_fenlei"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/fenlei" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="分类"
+                android:textSize="10sp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_centerHorizontal="true"
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/toolbar_edi_rounded_edittext">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/find_toolbar" />
+
+            <EditText
+                android:layout_marginLeft="5dp"
+                android:id="@+id/edi_shoushuo"
+                android:layout_gravity="center_vertical"
+
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@null"
+                android:hint="四季帐篷" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:layout_gravity="center_horizontal"
+                android:scaleType="center"
+                android:id="@+id/btn_mes"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/c_1"/>
+
+            <TextView
+                android:id="@+id/toobar_xinxi_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="信息"
+                android:textSize="10sp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <!--<include layout="@layout/toolbar" />-->
+    <include layout="@layout/draw"
+        />
+
+</LinearLayout>

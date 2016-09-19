@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#b0b0b0"></LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="65dp"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/headimage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/head1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/space_rvitem_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="榮本东"
+                android:textColor="#6ca5c5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/space_rvitem_context"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp"
+                android:maxLines="6"
+                android:text="谢谢赞助商每次新款上架都会准时寄给我。[呲牙]如果朋友们有需要可以直接订购。黑白两款/百搭
+"
+                android:textColor="#000000" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/space_rvitem_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" ></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/space_rvitem_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="成都·火车南站"
+                android:textColor="#3C3F41" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="3dp">
+
+                <TextView
+                    android:id="@+id/space_rvitem_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="35分钟前"
+                    android:textColor="#505050" />
+
+                <ImageButton
+                    android:id="@+id/space_rvitem_btnMes"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:src="@mipmap/pinglun" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

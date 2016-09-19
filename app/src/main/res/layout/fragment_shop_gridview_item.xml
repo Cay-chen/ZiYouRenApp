@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <ImageView
+        android:id="@+id/shop_gridView_image"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/shop_gridView_text1"
+        android:gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:text="￥69"
+        android:textColor="#ff0000"/>
+    <TextView
+        android:layout_marginTop="3dp"
+        android:id="@+id/shop_gridView_text2"
+        android:gravity="center"
+
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:textColor="#4e4e4e"
+        android:text=""
+        android:textSize="12sp"
+        android:layout_marginBottom="3dp"/>
+
+</LinearLayout>

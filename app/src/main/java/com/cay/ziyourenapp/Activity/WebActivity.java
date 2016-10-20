@@ -2,11 +2,13 @@ package com.cay.ziyourenapp.Activity;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import com.cay.ziyourenapp.R;
 
@@ -31,6 +33,19 @@ public class WebActivity extends Activity {
         webView.getSettings().setBlockNetworkImage(false);
         mWebSettings = webView.getSettings();
         mWebSettings.setJavaScriptEnabled(true);
+        webView.setWebViewClient( new WebViewClient(){
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                Log.i("TAG", url);
+                if (url.startsWith("http:") || url.startsWith("https:")) {
+                    view.loadUrl(url);
+                    return false;
+                }
+             /*   Intent intent2 = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent2);*/
+                return true;
+            }
+        });
     }
 
     @Override
@@ -51,4 +66,5 @@ public class WebActivity extends Activity {
        webView.reload();
        super.onPause();
    }
+
 }

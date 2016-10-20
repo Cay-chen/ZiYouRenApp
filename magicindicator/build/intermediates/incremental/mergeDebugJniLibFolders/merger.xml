@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="C:\Users\C\Desktop\ZiYouRenApp\ZiYouRenApp\magicindicator\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\C\Desktop\ZiYouRenApp\ZiYouRenApp\magicindicator\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="C:\Users\Cay\Desktop\ZiYouRenApp\magicindicator\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="C:\Users\Cay\Desktop\ZiYouRenApp\magicindicator\src\debug\jniLibs"/></dataSet></merger>
